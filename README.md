@@ -1,5 +1,5 @@
 <p align="center"><a href="https://telegram.org/"><img src="https://telegram.org/img/t_logo.svg?1" width="250"></a></p> 
-<h1 align="center"><a herf="t.me/theimagebot"><b>@theimagebot</b></a></h1>
+<h1 align="center"><a herf="t.me/theimagebot">@theimagebot</a></h1>
 
 <h4 align="center">A Telegram Bot Which Can Do Many Things With Image</h4>
 
@@ -8,6 +8,8 @@
 <p>💫 ➠ I Can Reverse Search An Image</p>
 <p>💫 ➠ I Can Add Watermark to An Image</p>
 <p>💫 ➠ I Can Blur A Image Support</p>
+
+# Support
 
 <a href="https://t.me/theostrich"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
 <a href="https://t.me/ostrichdiscussion"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
