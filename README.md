@@ -3,10 +3,11 @@
 
 <h4 align="center">A Telegram Bot Which Can Do Many Things With Image</h4>
 
-<li>
-
-
-# Support
+💫 ➠ I Can Carbonized A Code 
+💫 ➠ I Can Extract Text From An Image
+💫 ➠ I Can Reverse Search An Image
+💫 ➠ I Can Add Watermark to An Image
+💫 ➠ I Can Blur A Image# Support
 
 <a href="https://t.me/theostrich"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
 <a href="https://t.me/ostrichdiscussion"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
