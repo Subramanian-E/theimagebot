@@ -1,13 +1,13 @@
 <p align="center"><a href="https://telegram.org/"><img src="https://telegram.org/img/t_logo.svg?1" width="250"></a></p> 
-<h1 align="center"><a herf="t.me/theimagebot">@theimagebot</a></h1>
+<h1 align="center">theimagebot</h1>
 
 <h4 align="center">A Telegram Bot Which Can Do Many Things With Image</h4>
 
-<p>💫 ➠ I Can Carbonized A Code </p>
+<p>💫 ➠ I Can Carbonized Your Code </p>
 <p>💫 ➠ I Can Extract Text From An Image</p>
 <p>💫 ➠ I Can Reverse Search An Image</p>
 <p>💫 ➠ I Can Add Watermark to An Image</p>
-<p>💫 ➠ I Can Blur A Image Support</p>
+<p>💫 ➠ I Can Blur An Image</p>
 
 # Support
 
