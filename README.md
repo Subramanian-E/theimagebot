@@ -1,5 +1,4 @@
-<p align="center"><a href="https://t.me/thelogobot"><img src=https://telegra.ph/file/3e216de94b054be8569cc.png" width="250"></a></p> 
-
+<p align="center"><a href="https://t.me/theimagebot"><img src="https://telegra.ph/file/3e216de94b054be8569cc.png" width="5000"></a></p> 
 <p align="center"><aherf="https://cdn.dribbble.com/users/21546/screenshots/3998998/42_astrobot.png">//Image Credits//<a></p>
 
 <h1 align="center">theimagebot</h1>
