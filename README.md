@@ -14,7 +14,7 @@
 ## Demo
 
 <a herf="https://t.me/theimagebot"><imag src="https://img.shields.io/uptimerobot/status/up"></a>
-
+<a href="https://t.me/theostrich"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
 
 ## Support
 
