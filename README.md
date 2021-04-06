@@ -1,24 +1,51 @@
-<p align="center"><a href="https://t.me/theimagebot"><img src="https://cdn.dribbble.com/users/21546/screenshots/3998998/42_astrobot.png" width="5000"></a></p> 
+<p align="center"><a href="https://t.me/theimagebot"><img src="https://cdn.dribbble.com/users/21546/screenshots/3998998/42_astrobot.png" width="500"></a></p> 
 <p align='center'>// Image Credits : https://dribbble.com/Dangerdom //</p>
 
 <h1 align="center">theimagebot</h1>
 
 <h4 align="center">A Telegram Bot Which Can Do Many Things With Image</h4>
 
-<p>💫 ➠ I Can Carbonized Your Code </p>
-<p>💫 ➠ I Can Extract Text From An Image</p>
-<p>💫 ➠ I Can Reverse Search An Image</p>
-<p>💫 ➠ I Can Add Watermark to An Image</p>
-<p>💫 ➠ I Can Blur An Image</p>
+<p> ➠ I Can Carbonized Your Code </p>
+<p> ➠ I Can Extract Text From An Image</p>
+<p> ➠ I Can Reverse Search An Image</p>
+<p> ➠ I Can Add Watermark to An Image</p>
+<p> ➠ I Can Blur An Image</p>
 
-##Support
+## Demo
+
+<a herf="https://t.me/theimagebot"><imag src="https://img.shields.io/uptimerobot/status/up"></a>
+
+
+## Support
 
 <a href="https://t.me/theostrich"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
 <a href="https://t.me/ostrichdiscussion"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
 
+### Mandatory Configs Vars 📒
+
+```
+
+[-] TOKEN : { You can get this value from https://t.me/BotFather }
+[-] CHROMEDRIVER_PATH : /app/.chromedriver/bin/chromedriver
+[-] GOOGLE_CHROME_BIN : /app/.apt/usr/bin/google-chrome
+[-] TESSDATA_PREFIX : ./.apt/usr/share/tesseract-ocr/4.00/tessdata
+
+```
+
+### Build Pack 🛠
+
+```
+
+[+] heroku/python
+[+] https://github.com/heroku/heroku-buildpack-apt
+[+] https://github.com/heroku/heroku-buildpack-google-chrome
+[+] https://github.com/heroku/heroku-buildpack-chromedriver
+
+```
+
 # Licence
 
-* Copyright (C) 2020-2021 by NoOneLuvMe@Github, < https://github.com/NoOneLuvMe >.
+* Copyright (C) 2020-2021 by <a href="https://github.com/NoOneLuvMe">NoOneLuvMe@Github</a>.
 
 [![GNU GPLv3 Image](https://www.gnu.org/graphics/gplv3-127x51.png)](http://www.gnu.org/licenses/gpl-3.0.en.html)  
 
