@@ -1,5 +1,5 @@
 <p align="center"><a href="https://t.me/theimagebot"><img src="https://cdn.dribbble.com/users/21546/screenshots/3998998/42_astrobot.png" width="5000"></a></p> 
-<p align='center'>//Image Credits : https://dribbble.com/Dangerdom//</p>
+<p align='center'>// Image Credits : https://dribbble.com/Dangerdom //</p>
 
 <h1 align="center">theimagebot</h1>
 
@@ -11,7 +11,7 @@
 <p>💫 ➠ I Can Add Watermark to An Image</p>
 <p>💫 ➠ I Can Blur An Image</p>
 
-# Support
+##Support
 
 <a href="https://t.me/theostrich"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
 <a href="https://t.me/ostrichdiscussion"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
