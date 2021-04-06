@@ -1,4 +1,4 @@
-<p align="center"><a href="https://telegram.org/"><img src="https://telegram.org/img/t_logo.svg?1" width="250"></a></p> 
+<p align="center"><a href="https://telegram.org/"><img src="https://freesvg.org/img/Robot_Head.png" width="250"></a></p> 
 <h1 align="center">theimagebot</h1>
 
 <h4 align="center">A Telegram Bot Which Can Do Many Things With Image</h4>
