@@ -20,6 +20,7 @@
 
 <a href="https://t.me/theostrich"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
 <a href="https://t.me/ostrichdiscussion"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
+<a href="https://t.me/no_one_luv_me"><img src="https://img.shields.io/badge/dev-Black"></a>
 
 ### Mandatory Configs Vars 📒
 
