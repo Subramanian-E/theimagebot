@@ -17,6 +17,9 @@
 <a href="https://t.me/ostrichdiscussion"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
 
 # Licence
+
+* Copyright (C) 2020-2021 by NoOneLuvMe@Github, < https://github.com/NoOneLuvMe >.
+
 [![GNU GPLv3 Image](https://www.gnu.org/graphics/gplv3-127x51.png)](http://www.gnu.org/licenses/gpl-3.0.en.html)  
 
 theimagebot is Free Software: You can use, study share and improve it at your
