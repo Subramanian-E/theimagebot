@@ -1,5 +1,5 @@
 <p align="center"><a href="https://t.me/theimagebot"><img src="https://cdn.dribbble.com/users/21546/screenshots/3998998/42_astrobot.png" width="500"></a></p> 
-<p align='center'>//<a href="https://dribbble.com/Dangerdom">Image Credits</a>//</p>
+<p align='center'>// <a href="https://dribbble.com/Dangerdom">Image Credits</a> //</p>
 
 <h1 align="center">theimagebot</h1>
 
