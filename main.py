@@ -8,6 +8,7 @@ import logging
 import pytesseract
 from PIL import Image, ImageFilter, ImageDraw, ImageFont
 from telegram.ext import Updater, CommandHandler
+from telegram.ext.dispatcher import run_async
 import carbonsh
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
