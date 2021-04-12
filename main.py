@@ -4,6 +4,7 @@
 # support -> https://t.me/ostrichdiscussion
 
 import requests
+import logging
 import pytesseract
 from PIL import Image, ImageFilter, ImageDraw, ImageFont
 from telegram.ext import Updater, CommandHandler
@@ -14,6 +15,10 @@ import os
 import time
 
 TOKEN = os.getenv("BOT_TOKEN")
+
+# Enable logging
+logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 def imagetotext(update, context):
     context.bot.get_file(update.message.reply_to_message.photo[-1]).download(custom_path="./downloads/PictoText.jpg")
