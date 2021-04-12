@@ -5,17 +5,15 @@
 
 import requests
 import pytesseract
-from PIL import Image
-from PIL import ImageDraw
-from PIL import ImageFont
-from PIL import ImageFilter
+from PIL import Image, ImageFilter, ImageDraw, ImageFont
 from telegram.ext import Updater, CommandHandler
 import carbonsh
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import os
+import time
 
-TOKEN = os.getenv("TOKEN")
+TOKEN = os.getenv("BOT_TOKEN")
 updater = Updater(token=TOKEN, use_context=True)
 dispatcher = updater.dispatcher
 
@@ -300,7 +298,6 @@ Please Don't Spam 🥺
 
     driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=options)
     driver.get(carbon_url)
-    import time
     time.sleep(5)
     button = driver.find_element_by_xpath("//button[@class='jsx-1730877631 ']")
     button.click()
