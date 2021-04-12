@@ -14,9 +14,6 @@ import os
 import time
 
 TOKEN = os.getenv("BOT_TOKEN")
-updater = Updater(token=TOKEN, use_context=True)
-dispatcher = updater.dispatcher
-
 
 def imagetotext(update, context):
     context.bot.get_file(update.message.reply_to_message.photo[-1]).download(custom_path="./PicToImage/PictoText.jpg")
@@ -47,10 +44,6 @@ Please Don't Spam 🥺
 Text from Image By @theimagebot ❤
     '''
     context.bot.send_message(chat_id=update.effective_chat.id, text=image_to_text)
-
-
-imagetotext_handeler = CommandHandler('imagetotext', imagetotext)
-dispatcher.add_handler(imagetotext_handeler)
 
 
 def addwatermark(update, context):
@@ -110,10 +103,6 @@ Use /help If U don't Know How to Use Me*
         update.message.reply_text(reply_to_message_id=update.message.message_id, text=messa, parse_mode='markdown')
 
 
-addwatermark_handeler = CommandHandler('addwatermark', addwatermark)
-dispatcher.add_handler(addwatermark_handeler)
-
-
 def blur(update, context):
     username = update.message.chat.username
     print("Blured By : ", username)
@@ -150,10 +139,6 @@ Use /help If U don't Know How to Use Me*    '''
         update.message.reply_text(reply_to_message_id=update.message.message_id, text=messa, parse_mode='markdown')
 
 
-blur_handeler = CommandHandler('blur', blur)
-dispatcher.add_handler(blur_handeler)
-
-
 def reverse(update, context):
     username = update.message.chat.username
     print("Reverse By : ", username)
@@ -185,17 +170,14 @@ Please Don't Spam 🥺
     context.bot.send_message(chat_id=update.effective_chat.id, text=link, parse_mode='html')
 
 
-reverse_handeler = CommandHandler('reverse', reverse)
-dispatcher.add_handler(reverse_handeler)
-
 
 def start(update, context):
     username = update.message.chat.username
     print("started By : ", username)
     welcome = f'''
-<b>Hey @{username} 👋
+<b>Hey {username} 👋
 
-I'm <a herf=\"http://t.me/theimagebot\">@theimagebot</a> 
+I'm <a herf=\"http://t.me/theimagebot\">theimagebot</a> 
 
 I'm a Open Source Bot 
 /source_code to Get Repo Link 😌
@@ -220,10 +202,6 @@ Made By <a href=\"https://t.me/theostrich\"> Ostrich </a> ❤️
 '''
     update.message.reply_text(reply_to_message_id=update.message.message_id, text=welcome, parse_mode='html',
                               disable_web_page_preview=True)
-
-
-start_handler = CommandHandler('start', start)
-dispatcher.add_handler(start_handler)
 
 
 def help(update, context):
@@ -309,12 +287,6 @@ Please Don't Spam 🥺
     driver.close()
 
 
-carbon_handeler = CommandHandler('carbon', carbon)
-dispatcher.add_handler(carbon_handeler)
-
-help_handler = CommandHandler('help', help)
-dispatcher.add_handler(help_handler)
-
 
 def source_code(update, context):
     username = update.message.chat.username
@@ -337,11 +309,29 @@ Made By <a href=\"https://t.me/theostrich\"> Ostrich </a> ❤️
     update.message.reply_text(reply_to_message_id=update.message.message_id, text=source, parse_mode='html',
                               disable_web_page_preview=True)
 
+def main():
+    updater = Updater(token=TOKEN, use_context=True)
+    dispatcher = updater.dispatcher
+    
+    start_handler = CommandHandler('start', start)
+    help_handler = CommandHandler('help', help)
+    source_code_handeler = CommandHandler('source_code', source_code)
+    addwatermark_handeler = CommandHandler('addwatermark', addwatermark)
+    imagetotext_handeler = CommandHandler('imagetotext', imagetotext)
+    reverse_handeler = CommandHandler('reverse', reverse)
+    blur_handeler = CommandHandler('blur', blur)
+    carbon_handeler = CommandHandler('carbon', carbon)
+    
+    dispatcher.add_handler(start_handler)
+    dispatcher.add_handler(help_handler)
+    dispatcher.add_handler(carbon_handeler)
+    dispatcher.add_handler(reverse_handeler)
+    dispatcher.add_handler(blur_handeler)
+    dispatcher.add_handler(addwatermark_handeler)
+    dispatcher.add_handler(imagetotext_handeler)
+    dispatcher.add_handler(source_code_handeler)
 
-source_code_handeler = CommandHandler('source_code', source_code)
-dispatcher.add_handler(source_code_handeler)
-
-updater.start_polling()
+    updater.start_polling()
 
 # Dev -> t.me/no_one_luv_me
 # channel -> https://t.me/theostrich
