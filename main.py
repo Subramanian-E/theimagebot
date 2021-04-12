@@ -296,7 +296,7 @@ Please Don't Spam 🥺
     options.add_argument("--no-sandbox")
     options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
 
-    driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=options)
+    driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), options=options)
     driver.get(carbon_url)
     time.sleep(5)
     button = driver.find_element_by_xpath("//button[@class='jsx-1730877631 ']")
