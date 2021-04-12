@@ -333,6 +333,8 @@ def main():
 
     updater.start_polling()
 
+if __name__ == '__main__':
+    main()
 # Dev -> t.me/no_one_luv_me
 # channel -> https://t.me/theostrich
 # support -> https://t.me/ostrichdiscussion
