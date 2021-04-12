@@ -16,7 +16,7 @@ import time
 TOKEN = os.getenv("BOT_TOKEN")
 
 def imagetotext(update, context):
-    context.bot.get_file(update.message.reply_to_message.photo[-1]).download(custom_path="./PicToImage/PictoText.jpg")
+    context.bot.get_file(update.message.reply_to_message.photo[-1]).download(custom_path="./downloads/PictoText.jpg")
     username = update.message.chat.username
     print("started By : ", username)
 
@@ -61,7 +61,7 @@ def addwatermark(update, context):
     if size_ < 100:
 
         context.bot.get_file(update.message.reply_to_message.photo[-1]).download(
-            custom_path="./Watermark/@theimagebot.png")
+            custom_path="./downloads/@theimagebot.png")
         messa = '''<b>
 Please Wait For Few Seconds 🧘‍♂️
 
@@ -71,7 +71,7 @@ Please Don't Spam 🥺
                 </b>'''
         update.message.reply_text(reply_to_message_id=update.message.message_id, text=messa, parse_mode='html')
 
-        photo = Image.open("./Watermark/@theimagebot.png")
+        photo = Image.open("./downloads/@theimagebot.png")
         # make the image editable
         width, height = photo.size
 
@@ -107,7 +107,7 @@ def blur(update, context):
     username = update.message.chat.username
     print("Blured By : ", username)
     context.bot.get_file(update.message.reply_to_message.photo[-1]).download(
-        custom_path="./Editing/@theimagebot.png")
+        custom_path="./downloads/@theimagebot.png")
     blur_radious = int(context.args[0])
 
     if blur_radious < 100:
@@ -122,7 +122,7 @@ Please Don't Spam 🥺
 
         update.message.reply_text(reply_to_message_id=update.message.message_id, text=messa, parse_mode='html')
 
-        Photo = Image.open("./Editing/@theimagebot.png")
+        Photo = Image.open("./downloads/@theimagebot.png")
         photo = Photo.filter(ImageFilter.GaussianBlur(radius=blur_radious))
         photo.save('./Editing/@theimagebot.png')
 
@@ -143,7 +143,7 @@ def reverse(update, context):
     username = update.message.chat.username
     print("Reverse By : ", username)
     context.bot.get_file(update.message.reply_to_message.photo[-1]).download(
-        custom_path="./Reverse/@theimagebot.png")
+        custom_path="./downloads/@theimagebot.png")
     messa = '''<b>
 Please Wait For Few Seconds 🧘‍♂️
 
@@ -154,7 +154,7 @@ Please Don't Spam 🥺
 
     update.message.reply_text(reply_to_message_id=update.message.message_id, text=messa, parse_mode='html')
 
-    filePath = "./Reverse/@theimagebot.png"
+    filePath = "./downloads/@theimagebot.png"
     searchUrl = 'http://www.google.hr/searchbyimage/upload'
     multipart = {'encoded_image': (filePath, open(filePath, 'rb')), 'image_content': ''}
     response = requests.post(searchUrl, files=multipart, allow_redirects=False)
