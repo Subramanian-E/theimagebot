@@ -319,10 +319,10 @@ def main():
     updater = Updater(token=TOKEN, use_context=True)
     dispatcher = updater.dispatcher
     
-    start_handler = CommandHandler('start', start)
-    help_handler = CommandHandler('help', help)
-    source_code_handeler = CommandHandler('source_code', source_code)
-    addwatermark_handeler = CommandHandler('addwatermark', addwatermark)
+    start_handler = CommandHandler('start', start, run_async=True)
+    help_handler = CommandHandler('help', help, run_async=True)
+    source_code_handeler = CommandHandler('source_code', source_code), run_async=True
+    addwatermark_handeler = CommandHandler('addwatermark', addwatermark, run_async=True)
     imagetotext_handeler = CommandHandler('imagetotext', imagetotext)
     reverse_handeler = CommandHandler('reverse', reverse)
     blur_handeler = CommandHandler('blur', blur)
