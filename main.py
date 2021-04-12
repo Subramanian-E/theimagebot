@@ -39,7 +39,7 @@ Please Don't Spam 🥺
     def pixelProcBlue(intensity):
         return intensity
 
-    imageObject = Image.open('PicToImage/PictoText.jpg')
+    imageObject = Image.open('downloads/PictoText.jpg')
     multiBands = imageObject.split()
     blueBand = multiBands[2].point(pixelProcBlue)
 
@@ -70,7 +70,7 @@ def addwatermark(update, context):
         messa = '''<b>
 Please Wait For Few Seconds 🧘‍♂️
 
-Adding Watermark 🍃 to the image Image 🌠
+Adding Watermark 🍃 to the image 🌠
 
 Please Don't Spam 🥺
                 </b>'''
@@ -92,11 +92,11 @@ Please Don't Spam 🥺
 
         # draw watermark in the bottom right corner
         draw.text((x, y), text, font=font)
-        photo.save('./Watermark/@theimagebot.png')
+        photo.save('./downloads/@theimagebot.png')
 
         caption = "<b>Watermark Added By <a herf=\"http://t.me/theimagebot\">@theimagebot</a></b>❤️"
         context.bot.send_document(chat_id=update.effective_chat.id,
-                                  document=open('./Watermark/@theimagebot.png', 'rb'),
+                                  document=open('./downloads/@theimagebot.png', 'rb'),
                                   caption=caption, parse_mode="html")
 
     else:
@@ -120,7 +120,7 @@ def blur(update, context):
         messa = '''<b>
 Please Wait For Few Seconds 🧘‍♂️
 
-Start Bluring 🧖‍♂️ the image Image 🌠
+Start Bluring 🧖‍♂️ the image 🌠
 
 Please Don't Spam 🥺
                             </b>'''
