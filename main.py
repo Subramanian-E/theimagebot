@@ -175,7 +175,7 @@ Please Don't Spam 🥺
     context.bot.send_message(chat_id=update.effective_chat.id, text=link, parse_mode='html')
 
 
-
+@run_async
 def start(update, context):
     username = update.message.chat.username
     print("started By : ", username)
@@ -208,7 +208,7 @@ Made By <a href=\"https://t.me/theostrich\"> Ostrich </a> ❤️
     update.message.reply_text(reply_to_message_id=update.message.message_id, text=welcome, parse_mode='html',
                               disable_web_page_preview=True)
 
-
+@run_async
 def help(update, context):
     help_ = '''
 *You Don't Know How to Use Me ? ok
@@ -292,7 +292,7 @@ Please Don't Spam 🥺
     driver.close()
 
 
-
+@run_async
 def source_code(update, context):
     username = update.message.chat.username
     print("Source  : ", username)
