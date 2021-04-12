@@ -321,7 +321,7 @@ def main():
     
     start_handler = CommandHandler('start', start, run_async=True)
     help_handler = CommandHandler('help', help, run_async=True)
-    source_code_handeler = CommandHandler('source_code', source_code), run_async=True
+    source_code_handeler = CommandHandler('source_code', source_code, run_async=True)
     addwatermark_handeler = CommandHandler('addwatermark', addwatermark, run_async=True)
     imagetotext_handeler = CommandHandler('imagetotext', imagetotext)
     reverse_handeler = CommandHandler('reverse', reverse)
