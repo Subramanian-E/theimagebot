@@ -13,7 +13,7 @@
 
 ## Demo Bot
 
-<a href="https://t.me/theimagebot"><img src="https://img.shields.io/badge/Bot%20Status%20-Up-%3CCOLOR%3E"></a>
+<a href="https://t.me/theimagebot"><img src="https://img.shields.io/badge/Bot%20Status%20-Down-red"></a>
 
 
 ## Support
