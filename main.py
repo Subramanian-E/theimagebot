@@ -130,11 +130,11 @@ Please Don't Spam 🥺
 
         Photo = Image.open("./downloads/@theimagebot.png")
         photo = Photo.filter(ImageFilter.GaussianBlur(radius=blur_radious))
-        photo.save('./Editing/@theimagebot.png')
+        photo.save('./downloads/@theimagebot.png')
 
         caption = "<b>Blured  By <a herf=\"http://t.me/theimagebot\">@theimagebot</a></b> ❤️"
         context.bot.send_document(chat_id=update.effective_chat.id,
-                                  document=open('./Editing/@theimagebot.png', 'rb'),
+                                  document=open('./downloads/@theimagebot.png', 'rb'),
                                   caption=caption, parse_mode="html")
 
     else:
