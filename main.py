@@ -267,7 +267,7 @@ Please Don't Spam 🥺
 
     options = webdriver.ChromeOptions()
     prefs = {
-        "download.default_directory": "./Carbon/",
+        "download.default_directory": "./downloads/",
         "download.prompt_for_download": False,
         "download.directory_upgrade": True
     }
@@ -288,7 +288,7 @@ Please Don't Spam 🥺
     time.sleep(5)
     caption = "<b>Carbonized By <a herf=\"http://t.me/theimagebot\">@theimagebot</a></b>❤️"
     context.bot.send_document(chat_id=update.effective_chat.id,
-                              document=open('./Carbon/carbon.png', 'rb'),
+                              document=open('./downloads/carbon.png', 'rb'),
                               caption=caption, parse_mode="html")
     driver.close()
 
