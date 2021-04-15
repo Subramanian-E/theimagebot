@@ -22,6 +22,10 @@
       "description": "Chrome driver ENV Path",
       "value": "/app/.chromedriver/bin/chromedriver"
     },
+      "TESSDATA_PREFIX": {
+      "description": "Chrome driver ENV Path",
+      "value": "./.apt/usr/share/tesseract-ocr/4.00/tessdata"
+    },
       "GOOGLE_CHROME_BIN": {
       "description": "Chrome bin ENV Path",
       "value": "/app/.apt/usr/bin/google-chrome"
