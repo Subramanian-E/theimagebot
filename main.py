@@ -120,11 +120,9 @@ def blur(update, context):
 
         messa = '''<b>
 Please Wait For Few Seconds 🧘‍♂️
-
 Start Bluring 🧖‍♂️ the image 🌠
-
 Please Don't Spam 🥺
-                            </b>'''
+</b>'''
 
         update.message.reply_text(reply_to_message_id=update.message.message_id, text=messa, parse_mode='html')
 
@@ -166,10 +164,8 @@ Please Don't Spam 🥺
     response = requests.post(searchUrl, files=multipart, allow_redirects=False)
     fetchUrl = response.headers['Location']
     link = f'''
-<b>Your Search Result 👇 </b>
-
-{fetchUrl}
-
+<b>Your Search Result 👇 : </b>\n
+{fetchUrl}\n
 <b>Reversed By️
    <a herf=\"http://t.me/theimagebot\">@theimagebot</a></b> ❤
 '''
@@ -181,68 +177,45 @@ def start(update, context):
     username = update.message.chat.username
     print("started By : ", username)
     welcome = f'''
-<b>Hey {username} 👋
-
-I'm <a herf=\"http://t.me/theimagebot\">theimagebot</a> 
-
-I'm a Open Source Bot 
-/source_code to Get Repo Link 😌
-
-I Can Do Many Things
-
-💫 ➠ I Can Carbonized A Code 
-💫 ➠ I Can Extract Text From An Image
-💫 ➠ I Can Reverse Search An Image
-💫 ➠ I Can Add Watermark to An Image
-💫 ➠ I Can Blur A Image
-
-Hit /help If You Don't Know How to Use Me 
-
+<b>Hey {username} 👋\n
+I'm <a herf=\"http://t.me/theimagebot\">theimagebot</a>, an open Source Bot.\n
+<b>I Can Do Many Things</b>
+💫 ➠ I can carbonize your Code.
+💫 ➠ I can extract text from an image.
+💫 ➠ I can reverse search an image.
+💫 ➠ I can add watermark to an image.
+💫 ➠ I can blur an Image.\n
+Hit /help If You Don't Know How to Use Me \n
 Developer : <a href=\"t.me/no_one_luv_me\"> ෴ 乂(≧▽≦) 乂 ෴ </a>🧑‍💻
-
 Support Group : <a href=\"https://t.me/ostrichdiscussion\">Ostrich Discussion</a> 🦸‍♂️
-
 Made By <a href=\"https://t.me/theostrich\"> Ostrich </a> ❤️
-
 </b>
 '''
     update.message.reply_text(reply_to_message_id=update.message.message_id, text=welcome, parse_mode='html',
                               disable_web_page_preview=True)
 
 @run_async
-def help(update, context):
+def assist(update, context):
     help_ = '''
-*You Don't Know How to Use Me ? ok
-
-To Get text from that image 🏃‍♂️
-
-replay to an image with /imagetotext  
-
+*Don't know how to use me ?* Okay.\n
+*To get text from an image 🏃‍♂️
+replay to an image with /imagetotext \n 
 To Reverse search a image 🔍
-
-replay to an image with /reverse
-
-To Carbonized a Code 🌱
-
-replay to a Message with /carbon
-
-To Add watermark to an image 🏋️‍♂
-️
+replay to an image with /reverse\n
+To carbonize a code 🌱
+replay to your message with /carbon\n
+To Add watermark to an image 🏋️‍♂️
 replay to an image with /addwatermark {text to be watermark}:{watermark size}
-
-example: /addwatermark @ostrichdiscussion:30
-
-To Blur A Image 🚵‍♀️
-
+Ex:* `/addwatermark @ostrichdiscussion:30`\n
+*To Blur A Image 🚵‍♀️
 replay to an image with /blur {blur value}
-
-example: /blur 40
-
-I'm a Open Source Bot 
+Ex:* `/blur 40`\n
+*I'm a Open Source Bot 
 /source_code to Get Repo Link 😌
 *
     '''
     update.message.reply_text(reply_to_message_id=update.message.message_id, text=help_, parse_mode='markdown')
+
 
 
 def carbon(update, context):
@@ -320,7 +293,7 @@ def main():
     dispatcher = updater.dispatcher
     
     start_handler = CommandHandler('start', start, run_async=True)
-    help_handler = CommandHandler('help', help, run_async=True)
+    help_handler = CommandHandler('help', assist, run_async=True)
     source_code_handeler = CommandHandler('source_code', source_code, run_async=True)
     addwatermark_handeler = CommandHandler('addwatermark', addwatermark, run_async=True)
     imagetotext_handeler = CommandHandler('imagetotext', imagetotext)
