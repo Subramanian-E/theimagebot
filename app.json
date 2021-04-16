@@ -23,9 +23,13 @@
       "value": "/app/.chromedriver/bin/chromedriver"
     },
       "TESSDATA_PREFIX": {
-      "description": "Chrome driver ENV Path",
+      "description": "TESSDATA PREFIX",
       "value": "./.apt/usr/share/tesseract-ocr/4.00/tessdata"
     },
+      "LD_LIBRARY_PATH": {
+      "description": "LD_LIBRARY_PATH is a colon-separated set of directories where libraries should be searched for first",
+      "value": "/app/.heroku/vendor/lib:/app/.heroku/python/lib:/app/.apt/usr/lib/x86_64-linux-gnu:/app/.apt/usr/lib/i386-linux-gnu:/app/.apt/usr/lib:"
+    }
       "GOOGLE_CHROME_BIN": {
       "description": "Chrome bin ENV Path",
       "value": "/app/.apt/usr/bin/google-chrome"
@@ -43,6 +47,9 @@
     },
   {
       "url": "https://github.com/heroku/heroku-buildpack-chromedriver"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-apt"
     },
   { "url": "heroku/python" } ]
  }
