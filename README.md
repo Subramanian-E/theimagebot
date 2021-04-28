@@ -1,6 +1,4 @@
-<p align="center"><a href="https://t.me/theimagebot"><img src="https://cdn.dribbble.com/users/21546/screenshots/3998998/42_astrobot.png" width="500"></a></p> 
-<p align='center'>// <a href="https://dribbble.com/Dangerdom">Image Credits</a> //</p>
-
+<p align="center"><a href="https://t.me/theimagebot"><img src="https://telegra.ph/file/728ec52eda5adda3955f9.jpg" width="500"></a></p> 
 <h1 align="center">theimagebot</h1>
 
 <h4 align="center">A Telegram Bot Which Can Do Many Things With Image</h4>
