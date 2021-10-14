@@ -1,6 +1,3 @@
-<p align="center"><a href="https://t.me/theimagebot"><img src="https://telegra.ph/file/728ec52eda5adda3955f9.jpg" width="500"></a></p> 
-<h1 align="center">theimagebot</h1>
-
 <h4 align="center">A Telegram Bot Which Can Do Many Things With Image</h4>
 
 <p> ➠ I Can Carbonized Your Code </p>
